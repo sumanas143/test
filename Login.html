@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>sumana</title>
+<style>
+*{
+margin:0;
+padding:0;
+
+}
+.menu{
+width:100%;
+height:80px;
+background:black;
+display:flex;
+color:white;
+}
+ul{
+display:flex;
+}
+ul li{
+list-style:none;
+padding-left:180px;
+padding-top:18px;
+}
+.menu h1{
+padding-top:10px;
+}
+
+button{
+color:red;
+width:160px;
+height:50px;
+border:2px solid red;
+border-radius:20px 20px;
+margin-left:200px;
+background:black;
+margin-top:10px;
+}
+i{
+color:red;
+font-style:italic;
+padding-top:23px;
+}
+.logo{
+margin-top:10px;
+margin-left:15px;
+}
+
+.banner{
+height:100%;
+width:100%;
+background:rgb(0,0,0,0.6);
+align-items:center;
+justify-content:space-evenly;
+display:flex;
+
+}
+
+.artical{
+background:black;
+width:400px;
+height:400px;
+border-radius:10px 10px;
+margin-top:50px;
+margin-left:250px;
+animation:rim 6s linear infinite;
+}
+@keyframes rim{
+0%{
+
+box-shadow:5px 5px 15px purple;
+}
+50%{
+
+box-shadow:1px 1px 15px green;
+}
+100%{
+
+box-shadow:5px 5px 15px blue;
+}
+}
+
+
+.artical h1{
+padding-left:150px;
+padding-top:20px;
+color:white;
+
+animation:rimi 6s linear infinite;
+}
+@keyframes rimi{
+0%{
+letter-spacing:0px;
+text-shadow:5px 5px 5px purple;
+}
+50%{
+letter-spacing:5px;
+text-shadow:5px 5px 5px red;
+}
+100%{
+letter-spacing:10px;
+text-shadow:5px 5px 5px blue;
+}
+}
+
+.artical input{
+margin-top:30px;
+margin-left:20px;
+border:none;
+font-size:20px;
+outline:none;
+background:black;
+}
+
+input::placeholder{
+color:white;
+
+}
+hr{
+width:300px;
+margin-left:20px;
+height:0px;
+}
+
+.m{
+padding-left:150px;
+padding-top:50px;
+color:white;
+position:absolute;
+text-decoration:none;
+font-size:25px;
+}
+.m1{
+padding-left:70px;
+padding-top:90px;
+color:white;
+position:absolute;
+text-decoration:none;
+font-size:25px;
+}
+a{
+text-decoration:none;
+color:white;
+}
+.futer{
+width:100%;
+height:190px;
+background:black;
+padding-top:0;
+
+}
+.futer h1{
+padding-left:350px;
+color:white;
+word-spacing:5px;
+padding-top:50px;
+font-size:50px;
+}
+</style>
+</head>
+<body>
+<div class="menu">
+<div class="logo"><img src="burger.jpg" width="50px" height="50px">
+</div>
+<h1>Cool!<i>Burger</i></h1>
+
+<ul>
+<li><a href="sumana1.html">Home</a></li>
+<li>Contact</li>
+<li>Menu</li>
+</ul>
+
+<button>Send messege</button>
+</div>
+<div class="banner">
+<div class="artical">
+<h1>Login</h1>
+<input type="text" placeholder="Username">
+<hr>
+<input type="Password" placeholder="Password">
+<hr>
+<div class="m"><u>Login</u></div>
+<div class="m1">
+Forgot password?<a href="ragister.html"> sign up</a></div>
+</div>
+
+
+
+</div>
+
+<div class="futer">
+<h1><i>Find your best</i> tasted food &<br>
+drink just in one place</h1>
+</div>
+
+</body>
+</html>

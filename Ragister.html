@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>sumana</title>
+<style>
+*{
+margin:0;
+padding:0;
+
+}
+.menu{
+width:100%;
+height:80px;
+background:black;
+display:flex;
+color:white;
+
+}
+ul{
+display:flex;
+}
+ul li{
+list-style:none;
+padding-left:180px;
+padding-top:18px;
+}
+.menu h1{
+padding-top:10px;
+animation:s 6s linear infinite;
+transform-style:preserve-3d;
+prespective:500px;
+}
+@keyframes s{
+0%,100%{
+transform:rotateY(30deg);
+}
+50%{
+transform:rotateY(90deg);
+}
+}
+button{
+color:red;
+width:160px;
+height:50px;
+border:2px solid red;
+border-radius:20px 20px;
+margin-left:200px;
+background:black;
+margin-top:10px;
+}
+i{
+color:red;
+font-style:italic;
+padding-top:23px;
+}
+.logo{
+margin-top:10px;
+margin-left:15px;
+}
+
+.banner{
+height:800px;
+width:100%;
+background:black;
+align-items:center;
+justify-content:space-evenly;
+display:flex;
+}
+
+.artical{
+width:500px;
+height:530px;
+position:relative;
+background:black;
+align-items:center;
+display:flex;
+justify-content:space-evenly;
+color:white;
+z-index:1;
+overflow:hidden;
+}
+.artical::before{
+content:' ';
+background:linear-gradient( purple,blue,aqua,purple,red,teal,purple);
+width:500px;
+height:530px;
+animation:rim 6s linear infinite;
+position:absolute;
+z-index:2;
+transform-origin:bottom right;
+top:-50%;
+left:-50%;
+
+}
+.artical::after{
+content:' ';
+background:linear-gradient(blue,purple,aqua,purple,red,teal,blue);
+width:500px;
+height:530px;
+animation:rim 6s linear infinite;
+position:absolute;
+z-index:2;
+transform-origin:bottom right;
+top:-50%;
+left:-50%;
+
+animation-delay:-3s;
+}
+@keyframes rim{
+0%{
+
+transform:rotate(0);
+}
+
+100%{
+
+transform:rotate(360deg);
+}
+}
+.artical h1{
+text-align:center;
+color:green;
+animation:rimi 6s linear infinite;
+}
+.oi{
+background:black;
+width:490px;
+height:520px;
+position:absolute;
+z-index:3;
+}
+
+@keyframes rimi{
+0%{
+letter-spacing:1px;
+text-shadow:5px 5px 5px purple;
+}
+50%{
+letter-spacing15px;
+text-shadow:5px 5px 5px red;
+}
+100%{
+letter-spacing:10px;
+text-shadow:5px 5px 5px blue;
+}
+}
+
+.oi input{
+margin-top:10px;
+margin-left:75px;
+border:none;
+font-size:30px;
+padding-top:20px;
+background:black;
+outline:none;
+}
+
+input::placeholder{
+color:white;
+}
+.c7 input{
+margin-top:25px;
+margin-left:75px;
+border:none;
+font-size:10px;
+padding-top:10px;
+background:black;
+}
+.c8 input{
+margin-top:5px;
+margin-left:75px;
+border:none;
+font-size:30px;
+padding-top:20px;
+background:black;
+
+}
+
+
+hr{
+width:300px;
+margin-left:75px;
+height:0px;
+}
+
+.c9 button{
+color:black;
+width:70px;
+height:30px;
+font-size:20px;
+border:2px solid gray;
+border-radius:0px;
+margin-left:130px;
+background: yellow;
+margin-top:10px;
+
+}
+.c10 button{
+color:black;
+width:70px;
+height:30px;
+border-radius:0px;
+border:2px solid gray;
+margin-left:10px;
+background: yellow;
+margin-top:10px;
+font-size:20px;
+}
+a{
+text-decoration:none;
+color:white;
+}
+
+.rt{
+display:flex;
+}
+
+
+</style>
+</head>
+<body>
+<div class="menu">
+<div class="logo"><img src="burger.jpg" width="50px" height="50px">
+</div>
+<h1>Cool!<i>Burger</i></h1>
+
+<ul>
+<li>Home</li>
+<a href="contact.html"><li>Contact</a></li>
+<li>Menu</li>
+</ul>
+
+<button>Send messege</button>
+</div>
+<div class="banner">
+<div class="artical">
+<div class="oi">
+<h1>Registration</h1>
+<input type="text" placeholder="First Name">
+<hr>
+<input type="text" placeholder="Middle Name">
+<hr>
+<input type="text" placeholder="Last Name">
+<hr>
+<input type="text" placeholder="Mobile Number">
+<hr>
+<input type="text" placeholder="Email Id">
+<hr>
+
+
+
+<div class="c7">
+<input type="radio">Male
+<input type="radio">Female
+<input type="radio">Other</div>
+<div class="c8"><input type="text" placeholder="Address"></div>
+<hr><div class="rt">
+<div class="c9"><button>Submit</button></div>
+<div class="c10"><button>Reset</button></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
